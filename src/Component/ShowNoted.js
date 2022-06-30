@@ -19,7 +19,7 @@ const ShowNoted = () => {
         data.map((item) => {
           return (
             <div className=' shadow-lg px-9 mb-20 p-5' key={item.id}>
-              <h1 className=' font-bold text-sm md:text-lg'>{item.title}</h1>
+              <h1 className=' font-bold text-sm md:text-lg uppercase'>{item.id}. {item.title}</h1>
               <p className=' pl-2 text-sm'>{item.note}</p>
               <div className=' mt-10'>
                 <Link to={`/editnoted/${item.id}`}><button className=' bg-blue-600 px-5 rounded-xl text-white text-sm mr-3'>Edit</button></Link>
