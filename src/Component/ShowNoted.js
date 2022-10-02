@@ -10,7 +10,7 @@ const ShowNoted = () => {
 
   useEffect(() => {
     dispatch(getNoted());
-  }, [])
+  }, []);
 
   return (
     <div className=' w-[70%] flex-1 ml-20 border-l border-gray-300'>

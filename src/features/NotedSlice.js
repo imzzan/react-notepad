@@ -44,7 +44,7 @@ const notedSlice = createSlice({
             notedEntity.removeOne(state, action.payload);
         },
         [updateNoted.fulfilled] : (state, action) => {
-            notedEntity.updateOne(state, {id : action.payload.id, update: action.payload});
+            notedEntity.updateOne(state, {id : action.payload.id, update: action.update});
         }
     }
 })
